@@ -1,0 +1,41 @@
+version: '3'
+
+services:
+  mongo:
+    image: mongo:3.6
+    restart: unless-stopped
+    networks:
+      - KIB_CRUD_TASK
+    volumes:
+      - mongodata:/data/db
+      - mongoconfig:/data/configdb
+    expose:
+      - "27017"
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - KIB_CRUD_TASK
+    depends_on:
+      - mongo
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=development
+      - PORT=8080
+      - MONGO_HOST=mongo
+      - MONGO_PORT=27017
+      - MONGO_DATA_BASE_NAME=
+    ports:
+      - "8080:8080"
+
+networks:
+  KIB_CRUD_TASK:
+    driver: "bridge"
+
+volumes:
+  mongodata:
+    driver: local
+  mongoconfig:
+    driver: local
