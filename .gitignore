@@ -1,5 +1,6 @@
 .vscode
 
+
 node_modules/
 .gcloudignore
 .eslintrc
@@ -13,6 +14,7 @@ uploads/
 
 # Logs
 *.log
+logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

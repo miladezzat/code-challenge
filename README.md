@@ -9,7 +9,7 @@ A simple CRUD Application using ExpressJs and MongoDB
    - Post `8080` to be available on your machine
 
 2. Installation
-   - Clone repo ``
+   - Clone repo `git@github.com:miladezzat/code-challenge.git`
 
 3. Run Project
    - Open project on CRUD dir that inside root project dir in your terminal
@@ -56,6 +56,12 @@ If I have time, I will:
 5. Add faker data to generate fake data fot testing
 
 ## What I did do to develop the code?
-1. I took between 2h to 3h for planning and designing.
-2. Develop Product CRUD operations and its test case take from 4h up to 5h, I implemented it for  RESTful.
-3. Write this readme file take 30m.
+- Challenge One
+  1. I took between 2h to 3h for planning and designing.
+  2. Develop Product CRUD operations and its test case take from 4h up to 5h, I implemented it for  RESTful.
+
+- Challenge Two
+  1. I took 2h for planning
+  2. Developing the code take 4h
+   
+- Write this readme file take 30m.

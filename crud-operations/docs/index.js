@@ -4,12 +4,12 @@ module.exports = {
   swagger: '3.0',
   openapi: '3.0.0',
   info: {
-    description: 'This is a control panel apis',
+    description: 'This is the APIs Docs for KIB Products',
     version: '1.0.0',
-    title: 'CRUD TASK',
+    title: 'KIB CRUD Operations',
     termsOfService: 'http://swagger.io/terms/',
     contact: {
-      email: 'CRUD TASK@test.com',
+      email: 'dev@kib.com',
     },
     license: {
       name: 'Apache 2.0',
